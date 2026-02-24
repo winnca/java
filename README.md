@@ -515,7 +515,7 @@ public class StudentController{
 18. Добавим ещё нового пользователя для наглядности, которые храняться в памяти.
 
 <details>
-    <summary>create student</summary>
+    <summary>create</summary>
     <br>
     <img width="851" height="612" alt="image" src="https://github.com/user-attachments/assets/ce997041-1c91-4ff5-8fb8-0bf2f7352d27" />
     <br>
@@ -533,7 +533,7 @@ public class StudentController{
 19. Просмотрим данные одного из пользователей.
 
 <details>
-    <summary>read student</summary>
+    <summary>read</summary>
     <br>
     <img width="654" height="509" alt="image" src="https://github.com/user-attachments/assets/5a8e0530-8bc7-4436-afb9-e04654f4d929" />
 </details>
@@ -541,7 +541,7 @@ public class StudentController{
 20. Изменим данные о пользователе.
 
 <details>
-    <summary>update student</summary>
+    <summary>update</summary>
     <br>
     <img width="646" height="527" alt="image" src="https://github.com/user-attachments/assets/bdbf73cf-77d3-445d-a146-2b22a17f45ef" />
     <br>
@@ -553,7 +553,7 @@ public class StudentController{
 21. Удалим пользователя.
 
 <details>
-    <summary>delete student</summary>
+    <summary>delete</summary>
     <br>
     <img width="648" height="397" alt="image" src="https://github.com/user-attachments/assets/51e059d6-f695-4312-9eae-a804c6c2e580" />
     <br>
