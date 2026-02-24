@@ -562,6 +562,7 @@
 Обратите внимание, что можем создавать нового пользователя, прописывая только некоторые поля (обязательно email, так как аннотация @NonNull):
 
 <details>
+    <summary>details</summary>
     <img width="843" height="513" alt="image" src="https://github.com/user-attachments/assets/5d7506bb-954e-4a1c-a43b-ab472847a005" />
 </details>
 
