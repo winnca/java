@@ -779,10 +779,8 @@ public class StudentServiceImpl implements StudentService {
 <details>
     <summary>delete</summary>
     <br>
-    Добавим аннотацию @Transactional, чтобы операция удаления выполнялась, не возникало ошибок.
-    <img width="465" height="188" alt="image" src="https://github.com/user-attachments/assets/589c1601-1476-422e-9507-777dd2c13508" />
+    Подобным образом, как делали метод "read" для получения сведений о студенте в Postman, делаем для "delete".
     <br>
-    Перезапустим приложение.
     <img width="737" height="192" alt="image" src="https://github.com/user-attachments/assets/f8c27f04-f22d-4515-9a6f-2d500a376f3e" />
     <br>
     <img width="649" height="581" alt="image" src="https://github.com/user-attachments/assets/abe63d3f-3520-4f63-828b-d2e363055a33" />
