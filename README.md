@@ -565,6 +565,8 @@
     <img width="944" height="606" alt="image" src="https://github.com/user-attachments/assets/e072ebd0-b017-432e-ac03-164cc035489b" />
 </details>
 
+<br>
+
 15. Тестируем API. Выбираем POST запрос, выбираем "raw", вводим в формате JSON нового пользователя, нажимаем "Send".
 
 <details>
@@ -587,7 +589,7 @@
 
 <br>
 
-17. Добавим ещё нового пользователя для наглядности, которые храняться в памяти.
+> 17. Добавим ещё нового пользователя для наглядности, которые храняться в памяти.
 
 <details>
     <summary>create</summary>
@@ -599,14 +601,14 @@
     <img width="329" height="302" alt="image" src="https://github.com/user-attachments/assets/7e84de27-f114-47e2-91d6-5d69030ceeb6" />
 </details>
 
-Обратите внимание, что можем создавать нового пользователя, прописывая только некоторые поля (обязательно email, так как аннотация @NonNull):
+>> Обратите внимание, что можем создавать нового пользователя, прописывая только некоторые поля (обязательно email, так как аннотация @NonNull):
 
 <details>
     <summary>details</summary>
     <img width="843" height="513" alt="image" src="https://github.com/user-attachments/assets/5d7506bb-954e-4a1c-a43b-ab472847a005" />
 </details>
 
-18. Просмотрим данные одного из пользователей.
+> 18. Просмотрим данные одного из пользователей.
 
 <details>
     <summary>read</summary>
@@ -614,7 +616,7 @@
     <img width="654" height="509" alt="image" src="https://github.com/user-attachments/assets/5a8e0530-8bc7-4436-afb9-e04654f4d929" />
 </details>
 
-19. Изменим данные о пользователе.
+> 19. Изменим данные о пользователе.
 
 <details>
     <summary>update</summary>
@@ -626,7 +628,7 @@
     <img width="321" height="313" alt="image" src="https://github.com/user-attachments/assets/5be3aff4-3f03-4f15-bcbe-5e355baf7daf" />
 </details>
 
-20. Удалим пользователя.
+> 20. Удалим пользователя.
 
 <details>
     <summary>delete</summary>
