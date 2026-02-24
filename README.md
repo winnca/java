@@ -14,7 +14,7 @@
 
 <br>
 
-2. Возьмём зависимость Lombok версия 1.18.30 через "https://mvnrepository.com/":
+2. Возьмём зависимость Lombok версия 1.18.30 через "https://mvnrepository.com/".
 
 <details>
     <summary>maven repository</summary>
@@ -36,7 +36,7 @@
 
 <br>
 
-4. Создаём пакет model, в нём класс Student:
+4. Создаём пакет model. В нём класс Student.
 
 <details>
     <summary>code</summary>
