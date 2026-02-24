@@ -54,7 +54,7 @@ public class Student {
     <img width="372" height="381" alt="image" src="https://github.com/user-attachments/assets/76f0464e-482f-47c2-b044-10c8c03e3f43" />
 </details>
 
-5. Создадим контроллер. В нём сделаем реализацию создания студентов (хоть так делать некорректно).
+5. Создадим контроллер. В нём сделаем реализацию создания студентов (так делать некорректно).
 
 ```
 package ru.winnca.restcrud.students.controller;
@@ -160,7 +160,7 @@ public class StudentService {
 ```
 
 <details>
-    <summary>ru.winnca.restcrud.students.service.ram.StudentService</summary>
+    <summary>ru.winnca.restcrud.students.service.StudentService</summary>
     <br>
     <img width="1473" height="470" alt="image" src="https://github.com/user-attachments/assets/f75a5c34-2ab0-4fb2-afcf-72a6e4103ce5" />
 </details>
@@ -215,7 +215,7 @@ public class InMemoryStudentService implements StudentService {
 ```
 
 <details>
-    <summary>Service класс - InMemoryStudentService</summary>
+    <summary>ru.winnca.restcrud.service.ram.InMemoryStudentService</summary>
     <br>
     <img width="1471" height="497" alt="image" src="https://github.com/user-attachments/assets/3a61e1ba-c605-4b06-978b-28e7c59b07da" />
 </details>
@@ -256,7 +256,7 @@ public class StudentController{
     <img width="244" height="242" alt="image" src="https://github.com/user-attachments/assets/81d41491-4e46-44ea-b1c1-0ca201fa7d7d" />
 </details>
 
-11. Создаём методы CRUD (для создания, обновления, чтения, удаления). Пока только в сервисе.
+11. Создаём методы CRUD (создание, обновление, чтение, удаление). Пока только в сервисе.
 
 ```
 package ru.winnca.restcrud.students.service;
@@ -275,7 +275,7 @@ public interface StudentService {
 ```
 
 <details>
-    <summary>CRUD интерфейс</summary>
+    <summary>ru.winnca.restcrud.students.service.StudentService</summary>
     <br>
     <img width="404" height="414" alt="image" src="https://github.com/user-attachments/assets/e2a22ed2-cebb-45f6-8f13-82edd9238ae8" />
 </details>
@@ -324,7 +324,7 @@ public class InMemoryStudentService implements StudentService {
 ```
 
 <details>
-    <summary>Реализация интерфейса в сервисе</summary>
+    <summary>ru.winnca.restcrud.students.service.ram.InMemoryStudentService</summary>
     <br>
     <img width="1476" height="804" alt="image" src="https://github.com/user-attachments/assets/6e4ac6b0-aca8-4d62-8eb6-7f17f212ea8b" />
 </details>
@@ -431,7 +431,7 @@ public class InMemoryStudentService implements StudentService {
 ```
 
 <details>
-    <summary>Скрин</summary>
+    <summary>ru.winnca.restcrud.students.service.ram.InMemoryStudentService</summary>
     <br>
     <img width="1391" height="887" alt="image" src="https://github.com/user-attachments/assets/07191f4a-2329-4782-be1e-0733160ad092" />
 </details>
@@ -481,7 +481,7 @@ public class StudentController{
 ```
 
 <details>
-    <summary>Скрин</summary>
+    <summary>ru.winnca.restcrud.students.controller.StudentController</summary>
     <br>
     <img width="976" height="887" alt="image" src="https://github.com/user-attachments/assets/53e8515c-5504-4dda-9b89-7ed3cc841a9f" />
 </details>
@@ -599,7 +599,7 @@ spring:
 ```
 
 <details>
-    <summary>application.yaml</summary>
+    <summary>resources.application.yaml</summary>
     <br>
     <img width="226" height="146" alt="image" src="https://github.com/user-attachments/assets/7aa30a4c-e722-4c52-9c09-1ad1b422b08e" />
     <br>
@@ -623,7 +623,7 @@ import java.time.Period;
 @Table(name="students")
 public class Student {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
@@ -641,9 +641,9 @@ public class Student {
 ```
 
 <details>
-    <summary>model.Student</summary>
+    <summary>ru.winnca.restcrud.students.model.Student</summary>
     <br>
-    <img width="645" height="686" alt="image" src="https://github.com/user-attachments/assets/d9c78262-3659-4b92-bd99-7abd0314775b" />
+    <img width="581" height="679" alt="image" src="https://github.com/user-attachments/assets/56d763e2-171c-448c-b404-d6ca1d7eb97f" />
 </details>
 
 25. Добавим репозиторий студентов для взаимодействия с БД - JpaRepository. Добавим в него методы CRUD.
@@ -653,25 +653,19 @@ package ru.winnca.restcrud.students.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import ru.winnca.restcrud.students.model.Student;
+import java.util.Optional;
 
-import java.util.List;
-
-public interface StudentDbDAO extends JpaRepository<Student, Long> {
-    List<Student> findAllStudents();
-    Student saveStudent(Student student);
-    Student readStudent(String email);
-    Student updateStudent(Student student);
-    void deleteStudent(String email);
-
+public interface StudentRepository extends JpaRepository<Student, Long> {
+    Optional<Student> findByEmail(String email);
 }
 ```
 
 <details>
-    <summary>интерфейс StudentDbDAO</summary>
+    <summary>ru.winnca.restcrud.students.repository.StudentRepository</summary>
     <br>
-    <img width="219" height="74" alt="image" src="https://github.com/user-attachments/assets/636eaf39-6de4-44d0-b12f-9fb986d45c92" />
+    <img width="253" height="362" alt="image" src="https://github.com/user-attachments/assets/d438fd69-646b-4341-9014-e451570e31f9" />
     <br>
-    <img width="559" height="471" alt="image" src="https://github.com/user-attachments/assets/f5902af2-8317-4595-bb2a-ca8c311d7af8" />
+    <img width="602" height="255" alt="image" src="https://github.com/user-attachments/assets/5cb952e4-254b-4000-894b-dee9c4dc5472" />
 </details>
 
 26. Создадим сервис для взаимодействия с этим репозиторием. Пометим аннотацией @Primary - главный сервис для взаимодействия, если бд прекратит свою работу, то будет работать второй сервис.
@@ -679,11 +673,12 @@ public interface StudentDbDAO extends JpaRepository<Student, Long> {
 ```
 package ru.winnca.restcrud.students.service.db;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import ru.winnca.restcrud.students.model.Student;
-import ru.winnca.restcrud.students.repository.StudentDbDAO;
+import ru.winnca.restcrud.students.repository.StudentRepository;
 import ru.winnca.restcrud.students.service.StudentService;
 
 import java.util.List;
@@ -691,42 +686,49 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 @Primary
-public class InDbStudentService implements StudentService {
+public class StudentServiceImpl implements StudentService {
 
-    private final StudentDbDAO studentDbDAO;
+    private final StudentRepository studentRepository;
     @Override
     public List<Student> findAllStudents() {
-        return studentDbDAO.findAllStudents();
+        return studentRepository.findAll();
     }
 
     @Override
     public Student saveStudent(Student student) {
-        return studentDbDAO.saveStudent(student);
+        return studentRepository.save(student);
     }
 
     @Override
     public Student readStudent(String email) {
-        return studentDbDAO.readStudent(email);
+        return studentRepository.findByEmail(email).orElse(null);
     }
 
     @Override
     public Student updateStudent(Student student) {
-        return studentDbDAO.updateStudent(student);
+        if (student.getId() != null && studentRepository.existsById(student.getId())){
+            return studentRepository.save(student);
+        }
+        return null;
     }
 
     @Override
+    @Transactional
     public void deleteStudent(String email) {
-        studentDbDAO.deleteStudent(email);
+        Student student = readStudent(email);
+        if (student != null){
+            studentRepository.deleteById(student.getId());
+        }
     }
 }
 ```
 
 <details>
-    <summary>InDbStudentService</summary>
+    <summary>ru.winnca.restcrud.students.service.db.StudentServiceImpl</summary>
     <br>
-    <img width="251" height="144" alt="image" src="https://github.com/user-attachments/assets/ceb070e2-b1fd-42c1-a15b-ae1cc9742b57" />
+    <img width="241" height="145" alt="image" src="https://github.com/user-attachments/assets/8f908b47-ca6e-4a79-ab03-96bceb91e69f" />
     <br>
-    <img width="548" height="907" alt="image" src="https://github.com/user-attachments/assets/9a2c283f-a9ba-4101-819a-0d9b75e0edcd" />
+    <img width="922" height="883" alt="image" src="https://github.com/user-attachments/assets/d8fbe87b-ce89-44e2-8aa2-62e481d2c65b" />
 </details>
 
 27. Приложение готово, можно открывать pgAdmin4 (вводим пароль, создаём бд student_db) и Postman для тестирования. Запускаем приложение.
