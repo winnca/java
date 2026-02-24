@@ -561,6 +561,8 @@
     <img width="855" height="648" alt="image" src="https://github.com/user-attachments/assets/83bffb54-c660-4190-8635-32fa40a2e220" />
 </details>
 
+<br>
+
 17. Проверяем.
 
 <details>
@@ -570,6 +572,8 @@
     <br>
     <img width="515" height="247" alt="image" src="https://github.com/user-attachments/assets/6d0b9353-5f7e-4671-a00d-05e5cf71d60f" />
 </details>
+
+<br>
 
 18. Добавим ещё нового пользователя для наглядности, которые храняться в памяти.
 
@@ -620,6 +624,14 @@
     <img width="653" height="557" alt="image" src="https://github.com/user-attachments/assets/fa465273-aa05-4df6-8986-d5bd8726789d" />
 </details>
 
+<br>
+
+<br>
+
+## Часть 3. Вместо использование оперативной памяти, репозиторий взаимодействует с БД.
+
+<br>
+
 22. Вместо хранение объектов в оперативной памяти, воспользуемся БД. Будем использовать Spring Data JPA и PostgreSQL.
 
 <details>
@@ -629,12 +641,6 @@
     <br>
     <img width="337" height="102" alt="image" src="https://github.com/user-attachments/assets/2ae2ef3f-4397-4d74-9a95-253bef4b58fa" />
 </details>
-
-<br>
-
-<br>
-
-## Часть 3. Вместо использование оперативной памяти, репозиторий взаимодействует с БД.
 
 <br>
 
@@ -832,6 +838,8 @@
     <br>
     <img width="642" height="317" alt="image" src="https://github.com/user-attachments/assets/e213b657-1b9e-460d-a9a7-5b0b3e6fae3b" />
 </details>
+
+<br>
 
 28. Тестим.
 
