@@ -1,5 +1,9 @@
 # java
 
+## Часть 1. Создание проекта и проверка работоспобности. Создание модели и контроллера.
+
+<br>
+
 1. Создаём через start.spring.io zip-архив с проектом. Добавляем в него Spring Web. Скачиваем, разархивируем, открываем с помощью Intellij IDEA.
 
 <details>
@@ -108,6 +112,14 @@
     <img width="368" height="372" alt="image" src="https://github.com/user-attachments/assets/53dd2b70-a987-4566-a40e-0c9fa2231acf" />
 </details>
 
+<br>
+
+<br>
+
+## Часть 2. Создание CRUD с использованием сервиса и репозитория (помимо модели и контроллера).
+
+<br>
+
 9. Содержание бизнес-логики на уровне контроллера в маленьком приложении допускается, но когда масштаб больше, то надо отделять фасад, с которым будут работать пользователи или API от бизнес-логики. Для этого используют **сервисы**.
 
 <details>
@@ -181,6 +193,8 @@
     <br>
     <img width="224" height="193" alt="image" src="https://github.com/user-attachments/assets/44f591bd-38a4-47a2-a035-8d337d114560" />
 </details>
+
+<br>
 
 10. Чтобы приложение было легко расширяемым, воспользуемся интерфейсами в package service.
 
@@ -276,6 +290,8 @@
     <img width="244" height="242" alt="image" src="https://github.com/user-attachments/assets/81d41491-4e46-44ea-b1c1-0ca201fa7d7d" />
 </details>
 
+<br>
+
 11. Создаём методы CRUD (создание, обновление, чтение, удаление). Пока только в сервисе.
 
 <details>
@@ -355,6 +371,8 @@
     <img width="1476" height="804" alt="image" src="https://github.com/user-attachments/assets/6e4ac6b0-aca8-4d62-8eb6-7f17f212ea8b" />
 </details>
 
+<br>
+
 12. Хранение объектов в сервисе некорректно, лучше делать этого через репозитории. Своего рода классы, обеспечивающие доступ к данным. Либо взаимодействует с базой данных (MySQL, PostgreSQL, ...) или с памятью.
 
 <details>
@@ -409,6 +427,8 @@
     <br>
     <img width="242" height="283" alt="image" src="https://github.com/user-attachments/assets/ec6ee12e-7ccd-4a40-8701-21eca012d0d0" />
 </details>
+
+<br>
 
 13. Использование репозитория в сервисе.
 
@@ -468,6 +488,8 @@
     <img width="1391" height="887" alt="image" src="https://github.com/user-attachments/assets/07191f4a-2329-4782-be1e-0733160ad092" />
 </details>
 
+<br>
+
 14. Использование сервиса в контроллере.
 
 <details>
@@ -520,6 +542,8 @@
     <br>
     <img width="976" height="887" alt="image" src="https://github.com/user-attachments/assets/53e8515c-5504-4dda-9b89-7ed3cc841a9f" />
 </details>
+
+<br>
 
 15. Скачивае приложение Postman. Нажимаем на кнопку "New", выбираем "HTTP".
 
@@ -606,6 +630,14 @@
     <img width="337" height="102" alt="image" src="https://github.com/user-attachments/assets/2ae2ef3f-4397-4d74-9a95-253bef4b58fa" />
 </details>
 
+<br>
+
+<br>
+
+## Часть 3. Вместо использование оперативной памяти, репозиторий взаимодействует с БД.
+
+<br>
+
 23. Перейдём в application.yaml настроим подключение к БД.
 
 <details>
@@ -644,6 +676,8 @@
     <br>
     <img width="526" height="514" alt="image" src="https://github.com/user-attachments/assets/6cc04f3d-491d-4124-9af2-c4eb7dd4d1dd" />
 </details>
+
+<br>
 
 24. Изменим модель, чтобы java класс можно преобразовать в таблицу или сущность, то есть Hibernate и Spring Data Jpa могли манипулировать этими объектами. Будет использовать аннотации.
 
@@ -688,6 +722,8 @@
     <img width="581" height="679" alt="image" src="https://github.com/user-attachments/assets/56d763e2-171c-448c-b404-d6ca1d7eb97f" />
 </details>
 
+<br>
+
 25. Добавим репозиторий студентов для взаимодействия с БД - JpaRepository. Добавим в него методы CRUD.
 
 <details>
@@ -712,6 +748,8 @@
     <br>
     <img width="602" height="255" alt="image" src="https://github.com/user-attachments/assets/5cb952e4-254b-4000-894b-dee9c4dc5472" />
 </details>
+
+<br>
 
 26. Создадим сервис для взаимодействия с этим репозиторием. Пометим аннотацией @Primary - главный сервис для взаимодействия, если бд прекратит свою работу, то будет работать второй сервис.
 
@@ -778,6 +816,8 @@
     <br>
     <img width="922" height="883" alt="image" src="https://github.com/user-attachments/assets/d8fbe87b-ce89-44e2-8aa2-62e481d2c65b" />
 </details>
+
+<br>
 
 27. Приложение готово, можно открывать pgAdmin4 (вводим пароль, создаём бд student_db) и Postman для тестирования. Запускаем приложение.
 
