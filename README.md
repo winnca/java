@@ -18,9 +18,9 @@
 4. [application.yaml](#title4)
 
 ### Практика
-* [Часть 1](#title4)
-* [Часть 2](#title5)
-* [Часть 3](#title6)
+* [Часть 1](#title5)
+* [Часть 2](#title6)
+* [Часть 3](#title7)
 
 <br>
 <br>
