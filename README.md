@@ -15,6 +15,7 @@
    - 3.2. [Lombok](#title32)
    - 3.3. [Spring Data Jpa](#title33)
    - 3.4. [PostgreSQL Driver](#title34)
+4. [application.yaml](#title4)
 
 ### Практика
 * [Часть 1](#title4)
@@ -627,6 +628,153 @@ Spring начинает уничтожать бины **в обратном по
 | Не зависит от конкретной СУБД | Зависит от типа базы данных |
 
 * `Spring Data JPA` работает с любой реляционной базой данных, но для каждой нужен свой `JDBC-драйвер`. Поэтому мы добавляем оба: один `для удобной работы с данными`, второй — `для связи с PostgreSQL`.
+
+---
+
+## <a id="title4">4. application.yaml</a>
+
+1. `name: students` — задаёт имя приложения. Используется для идентификации в логах, `service registry` (например, `Eureka`) - микросервисная архитектура.
+
+```
+spring:
+  application:
+    name: students
+```
+
+2. `indent-output: true` — форматирует `JSON-ответы` с отступами. Делает вывод в `Postman` и браузере читаемым. Для продакшена обычно отключают для экономии трафика.
+
+```
+  jackson:
+    serialization:
+      indent-output: true
+```
+
+3. `url` — строка подключения к базе данных:
+
+* `jdbc:postgresql://` — протокол = `JDBC` для `PostgreSQL`.
+
+* `localhost` — хост = где запущена БД.
+
+* `5432` — порт = стандартный для `PostgreSQL`.
+
+* `student_db` — имя базы данных.
+
+```
+  datasource:
+    url:
+      jdbc:postgresql://localhost:5432/student_db
+```
+
+4. `username` — имя пользователя для подключения к `PostgreSQL`.
+
+```
+    username:
+      postgres
+```
+
+5. `password `— пароль пользователя `PostgreSQL`.
+
+```
+    password:
+      12345678
+```
+
+6. `driver-class-name` — указывает полное имя класса `JDBC-драйвера`. `Spring Boot` может определить его автоматически по `URL`, но явное указание повышает надёжность.
+
+```
+    driver-class-name: org.postgresql.Driver
+```
+
+7. `ddl-auto: create` — политика управления схемой базы данных:
+
+* `create` — при каждом запуске удаляет существующие таблицы и создаёт заново (данные теряются).
+
+* `create-drop` — создаёт таблицы, а при остановке приложения удаляет их.
+
+* `update` — обновляет схему без удаления данных (добавляет новые колонки/таблицы).
+
+* `validate` — проверяет, что схема соответствует сущностям, но не меняет её.
+
+* `none` — отключает автоматическое управление схемой.
+
+```
+  jpa:
+    hibernate:
+      ddl-auto: create
+```
+
+8. `database` — явно указывает тип базы данных. `Spring Boot `может определить автоматически, но явное указание исключает ошибки.
+
+```
+    database: postgresql
+```
+
+9. `database-platform` — диалект `Hibernate`. Сообщает `Hibernate`, какие `SQL-конструкции` и типы данных поддерживает конкретная СУБД. Например, `PostgreSQL` использует `LIMIT` вместо ROWNUM, и диалект генерирует правильные запросы.
+
+```
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+```
+
+10. `show-sql: true` — выводит сгенерированные `SQL-запросы` в консоль. Полезно для отладки, чтобы видеть, какие запросы `Hibernate` отправляет в базу.
+
+```
+    show-sql: true
+```
+
+11. `format_sql: true` — форматирует `SQL-запросы` в логах с отступами и переносами строк. Работает только вместе с `show-sql: true`.
+
+```
+    properties:
+      hibernate:
+        format_sql: true
+```
+
+* Без форматирования:
+
+```
+INSERT INTO Students (email,first_name,last_name) VALUES (?,?,?)
+```
+
+* С форматированием:
+
+```
+INSERT
+INTO
+    Students
+    (email, first_name, last_name) 
+VALUES
+    (?, ?, ?)
+```
+
+Полный:
+
+* `application.yaml` — это файл конфигурации `Spring Boot`, в котором задаются настройки приложения.
+
+```
+spring:
+  application:
+    name: students
+  jackson:
+    serialization:
+      indent-output: true
+  datasource:
+    url:
+      jdbc:postgresql://localhost:5432/student_db
+    username:
+      postgres
+    password:
+      12345678
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+```
 
 <br>
 <br>
