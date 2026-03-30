@@ -13,6 +13,8 @@
 3. [Зависимости проекта](#title3)
    - 3.1. [Spring Web](#title31)
    - 3.2. [Lombok](#title32)
+   - 3.3. [Spring Data Jpa](#title33)
+   - 3.4. [PostgreSQL Driver](#title34)
 
 ### Практика
 * [Часть 1](#title4)
@@ -605,7 +607,7 @@ Spring начинает уничтожать бины **в обратном по
 
 <br>
 
-### <a id="title33">3.3. PostgreSQL Driver</a>
+### <a id="title34">3.4. PostgreSQL Driver</a>
 
 **Что это:** JDBC-драйвер для подключения к PostgreSQL.
 
