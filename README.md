@@ -1486,6 +1486,17 @@ spring:
 23. Изменим модель, чтобы java класс можно преобразовать в таблицу или сущность, то есть Hibernate и Spring Data Jpa могли манипулировать этими объектами. Будет использовать аннотации.
 
 <details>
+   <summary>аннотации</summary>
+   <br>
+   * `@Entity` = указывает, что класс является `JPA-сущностью` и будет отображён на таблицу в БД.
+   * `@Table(name="students")` = задаёт имя таблицы в базе данных (по умолчанию использовалось бы имя класса).
+   * `@Id` = обозначает первичный ключ.
+   * `@GeneratedValue(strategy = GenerationType.IDENTITY)` = указывает, что значение `ID` генерируется базой данных (автоинкремент).
+   * `@Column(unique = true)` = устанавливает уникальное ограничение на колонку `email` в БД.
+   * `@Transient` = поле не сохраняется в базу данных. возраст вычисляется динамически на основе даты рождения.
+</details>
+
+<details>
     <summary>code</summary>
     <br>
 
@@ -1543,6 +1554,14 @@ spring:
     public interface StudentRepository extends JpaRepository<Student, Long> {
         Optional<Student> findByEmail(String email);
     }
+</details>
+
+<details>
+   <summary>дополнение</summary>
+   <br>
+   * `JpaRepository` — это интерфейс из `Spring Data JPA`, который предоставляет готовый набор методов для выполнения `CRUD-операций` и работы с базой данных. Он наследуется от других репозиториев (`CrudRepository`, `ListCrudRepository`, `PagingAndSortingRepository`, `ListPagingAndSortingRepository`), которые в совокупности дают большую часть реализации наших CRUD-операций.
+   <br>
+   * Используем `Optional`, чтобы явно указать, что "этот метод может не вернуть студента".
 </details>
 
 <details>
@@ -1611,6 +1630,13 @@ spring:
             }
         }
     }
+</details>
+
+<details>
+   <summary>дополнение</summary>
+   <br>
+   * `@Transactional` на методе `deleteStudent()` = гарантирует, что операция удаления выполнится в рамках транзакции. Если при удалении возникнет исключение, изменения не будут применены.
+   * проврека в `updateStudent()` = `student.getId() != null && studentRepository.existsById(student.getId())` = убеждаемся, что студент с таким ID существует перед обновлением.
 </details>
 
 <details>
