@@ -270,21 +270,21 @@
 <details>
     <summary>terminal</summary>
     <br>
-    [![img.png](img.png)](https://github.com/winnca/java/blob/spring_security/README/img.png)
+    <img width="1546" height="380" alt="image" src="https://github.com/user-attachments/assets/15fc03fb-715a-44e7-9cf7-eac1160d7c6b" />
     <br>
-    ![img_1.png](img_1.png)
+    <img width="1642" height="197" alt="image" src="https://github.com/user-attachments/assets/5b709e81-57a5-44a1-b74c-82ec5eb7c208" />
 </details>
 
 <details>
     <summary>website</summary>
     <br>
-    ![img_2.png](img_2.png)
+    <img width="353" height="229" alt="image" src="https://github.com/user-attachments/assets/61f96e3c-884e-4e9d-a2f1-b0bf749f1a0d" />
     <br>
-    ![img_3.png](img_3.png)
+    <img width="402" height="138" alt="image" src="https://github.com/user-attachments/assets/89cf23ae-4e6f-4497-8821-f76338880413" />
     <br>
-    ![img_4.png](img_4.png)
+    <img width="1897" height="544" alt="image" src="https://github.com/user-attachments/assets/e0256995-204a-48ea-be6e-602d58128af8" />
     <br>
-    ![img_5.png](img_5.png)
+    <img width="498" height="132" alt="image" src="https://github.com/user-attachments/assets/61749133-5365-43f9-bf8a-e310ff7f4b0a" />
 </details>
 
 <br>
@@ -316,15 +316,15 @@
 <details>
     <summary>sign in</summary>
     <br>
-    ![img_6.png](img_6.png)
+    <img width="1718" height="279" alt="image" src="https://github.com/user-attachments/assets/16bf4459-8846-423c-b34e-a6cdb08bcb25" />
     <br>
-    ![img_7.png](img_7.png)
+    <img width="341" height="220" alt="image" src="https://github.com/user-attachments/assets/1b3c04a3-1fab-40b1-8957-73b99d5ece7f" />
     <br>
-    ![img_8.png](img_8.png)
+    <img width="422" height="152" alt="image" src="https://github.com/user-attachments/assets/c16d7014-6cbc-41ab-879d-3aad55e91b54" />
     <br>
-    ![img_9.png](img_9.png)
+    <img width="1904" height="557" alt="image" src="https://github.com/user-attachments/assets/93e0f1c6-1301-4103-95e9-b585f9d4cac9" />
     <br>
-    ![img_10.png](img_10.png)
+    <img width="531" height="122" alt="image" src="https://github.com/user-attachments/assets/50d4c302-78da-47ef-b991-456b5fdd1fb4" />
 </details>
 
 Вывод:
@@ -429,47 +429,47 @@
 <details>
   <summary>architecture</summary>
   <br>
-  ![img_11.png](img_11.png)
+  <img width="274" height="243" alt="image" src="https://github.com/user-attachments/assets/7a088d2d-4000-410f-9a01-80103717a579" />
 </details>
 
 <details>
   <summary>sign in alex</summary>
   <br>
-  ![img_12.png](img_12.png)
+  <img width="354" height="221" alt="image" src="https://github.com/user-attachments/assets/7cbf5dd9-24b1-4eea-920d-63dab4930c4e" />
   <br>
-  ![img_13.png](img_13.png)
+  <img width="341" height="121" alt="image" src="https://github.com/user-attachments/assets/cb66031a-fcd7-4d05-a0ff-198d34a90398" />
   <br>
-  ![img_14.png](img_14.png)
+  <img width="1897" height="582" alt="image" src="https://github.com/user-attachments/assets/f6560201-c028-44a2-b2ad-4ed95b99c42f" />
   <br>
-  ![img_15.png](img_15.png)
+  <img width="602" height="151" alt="image" src="https://github.com/user-attachments/assets/885bc7ab-07d5-4859-bdf5-abd1b1aa4674" />
 </details>
 
 <details>
   <summary>sign in admin</summary>
   <br>
-  ![img_16.png](img_16.png)
+  <img width="337" height="221" alt="image" src="https://github.com/user-attachments/assets/1d7817d6-64f0-4460-a9ca-31f144933a68" />
   <br>
-  ![img_17.png](img_17.png)
+  <img width="404" height="111" alt="image" src="https://github.com/user-attachments/assets/fab1e592-1a0e-4228-8b41-e5b4dd226d9d" />
   <br>
-  ![img_18.png](img_18.png)
+  <img width="1892" height="562" alt="image" src="https://github.com/user-attachments/assets/a2f0b7e6-dc66-453e-bd46-c51fc3fb122a" />
   <br>
-  ![img_19.png](img_19.png)
+  <img width="473" height="145" alt="image" src="https://github.com/user-attachments/assets/f65cf006-8e24-434c-b880-416caefd5577" />
 </details>
 
 <details>
   <summary>sign in user</summary>
   <br>
-  ![img_20.png](img_20.png)
+  <img width="351" height="225" alt="image" src="https://github.com/user-attachments/assets/60048a45-ace3-41e9-b907-9936251a2fdd" />
   <br>
-  ![img_21.png](img_21.png)
+  <img width="343" height="282" alt="image" src="https://github.com/user-attachments/assets/095fe82b-a767-4279-b72b-0a2ba3616314" />
   <br>
   Исправим на: UserDetails user = User.builder().username("user").password(encoder.encode("user")).build();
   <br>
-  ![img_22.png](img_22.png)
+  <img width="337" height="283" alt="image" src="https://github.com/user-attachments/assets/c2dfc84a-bb51-4d71-aa04-f975ebef97bd" />
   <br>
-  ![img_23.png](img_23.png)
+  <img width="472" height="138" alt="image" src="https://github.com/user-attachments/assets/d082b774-cf97-4764-b96f-9a5badd089c1" />
   <br>
-  ![img_24.png](img_24.png)
+  <img width="1891" height="566" alt="image" src="https://github.com/user-attachments/assets/8ff8131d-4ebb-40b0-bdc1-57492c404303" />
 </details>
 
 ### Замечание:
@@ -557,17 +557,17 @@ d. Все желающие могут авторизироваться: `.formLo
 <details>
   <summary>sign in</summary>
   <br>
-  ![img_25.png](img_25.png)
+  <img width="295" height="47" alt="image" src="https://github.com/user-attachments/assets/a416f4dc-95f5-480b-b18f-9b6a5b58b351" />
   <br>
-  ![img_26.png](img_26.png)
+  <img width="376" height="109" alt="image" src="https://github.com/user-attachments/assets/cf32be1c-1e73-4631-84bb-4b6d7e291288" />
   <br>
-  ![img_27.png](img_27.png)
+  <img width="223" height="41" alt="image" src="https://github.com/user-attachments/assets/4342c65f-a3d0-45f7-bcbb-f2ba3b52484e" />
   <br>
-  ![img_28.png](img_28.png)
+  <img width="1048" height="328" alt="image" src="https://github.com/user-attachments/assets/184b2792-426d-4e23-8895-d565c8b2bda1" />
   <br>
-  ![img_29.png](img_29.png)
+  <img width="327" height="221" alt="image" src="https://github.com/user-attachments/assets/843267ba-02ea-4988-8abf-e2402a704a8b" />
   <br>
-  ![img_30.png](img_30.png)
+  <img width="1899" height="556" alt="image" src="https://github.com/user-attachments/assets/d08d4497-7921-4e35-af0e-9cc6fdfebd2f" />
 </details>
 
 ### Замечание:
@@ -665,37 +665,37 @@ d. Все желающие могут авторизироваться: `.formLo
 <details>
   <summary>sign in user</summary>
   <br>
-  ![img_31.png](img_31.png)
+  <img width="250" height="29" alt="image" src="https://github.com/user-attachments/assets/23c817ee-41ef-43b9-bb3c-72114dd4a8e4" /> 
   <br>
-  ![img_32.png](img_32.png)
+  <img width="340" height="155" alt="image" src="https://github.com/user-attachments/assets/a6d7520c-d634-4f0c-835c-29bffe5b97f4" />
   <br>
-  ![img_33.png](img_33.png)
+  <img width="1906" height="558" alt="image" src="https://github.com/user-attachments/assets/6f96ee49-b518-44f0-a7d1-05b4bc0c00e4" />
   <br>
-  ![img_34.png](img_34.png)
+  <img width="608" height="482" alt="image" src="https://github.com/user-attachments/assets/af16ce8b-11e9-4d96-82fc-e0e14e5ce8fb" />
 </details>
 
 <details>
   <summary>sign in admin</summary>
   <br>
-  ![img_35.png](img_35.png)
+  <img width="242" height="37" alt="image" src="https://github.com/user-attachments/assets/61cba721-094f-43c2-bb6c-bd7f0a88697e" />
   <br>
-  ![img_36.png](img_36.png)
+  <img width="329" height="229" alt="image" src="https://github.com/user-attachments/assets/73b1d5ad-9db0-4eea-b16e-b0b19b35ede5" />
   <br>
-  ![img_37.png](img_37.png)
+  <img width="522" height="141" alt="image" src="https://github.com/user-attachments/assets/fa47291b-75c5-4658-b60d-69a9bbbe830f" />
   <br>
-  ![img_38.png](img_38.png)
+  <img width="594" height="481" alt="image" src="https://github.com/user-attachments/assets/730f6974-a3f3-496b-8d95-ba0f04a86975" />
 </details>
 
 <details>
   <summary>sign in alex</summary>
   <br>
-  ![img_39.png](img_39.png)
+  <img width="246" height="37" alt="image" src="https://github.com/user-attachments/assets/9f05f9ce-7b37-4f3e-b5ab-ed3e13afb2da" />
   <br>
-  ![img_40.png](img_40.png)
+  <img width="326" height="227" alt="image" src="https://github.com/user-attachments/assets/cc329cfe-1bd7-4172-bc67-9ebed969bb6d" />
   <br>
-  ![img_41.png](img_41.png)
+  <img width="1912" height="563" alt="image" src="https://github.com/user-attachments/assets/93801c60-192a-43f5-9dbf-875dd35056af" />
   <br>
-  ![img_42.png](img_42.png)
+  <img width="535" height="139" alt="image" src="https://github.com/user-attachments/assets/712f1dcd-3f36-43b2-99fd-c4e0690e97e4" />
 </details>
 
 <br>
@@ -1218,50 +1218,50 @@ d. Все желающие могут авторизироваться: `.formLo
 
 <details>
   <summary>Postman: sign up</summary>
-  ![img_43.png](img_43.png)
+  <img width="644" height="370" alt="image" src="https://github.com/user-attachments/assets/75809e93-6cad-4536-9227-5bdec554286c" />
   <br>
-  ![img_44.png](img_44.png)
+  <img width="652" height="389" alt="image" src="https://github.com/user-attachments/assets/cef35c36-3ab3-43ef-9cbc-df9d9f08ce6f" />
   <br>
-  ![img_45.png](img_45.png)
+  <img width="656" height="400" alt="image" src="https://github.com/user-attachments/assets/3e43bccb-d0cf-40d0-8d17-296e024edf55" />
 </details>
 
 <details>
   <summary>PostgreSQL</summary>
   <br>
-  ![img_46.png](img_46.png)
+  <img width="886" height="254" alt="image" src="https://github.com/user-attachments/assets/19b12942-f9b9-41c7-81aa-e504854a884f" />
 </details>
 
 <details>
   <summary>sign in user</summary>
   <br>
-  ![img_47.png](img_47.png)
+  <img width="270" height="37" alt="image" src="https://github.com/user-attachments/assets/666349db-a4e8-45dc-994d-d4cb7d35b766" />
   <br>
-  ![img_48.png](img_48.png)
+  <img width="338" height="217" alt="image" src="https://github.com/user-attachments/assets/eee6e5c1-d0eb-451f-9b99-5457a881a591" />
   <br>
-  ![img_49.png](img_49.png)
+  <img width="1906" height="471" alt="image" src="https://github.com/user-attachments/assets/67d96532-d057-447b-82e3-cc9e6657ffbf" />
   <br>
-  ![img_50.png](img_50.png)
+  <img width="603" height="491" alt="image" src="https://github.com/user-attachments/assets/65f81bb8-65f4-40d0-b4cd-1d0fab38cd3c" />
 </details>
 
 <details>
   <summary>sign in admin</summary>
   <br>
-  ![img_51.png](img_51.png)
+  <img width="259" height="28" alt="image" src="https://github.com/user-attachments/assets/3e366097-db6e-4430-ad0f-eb0225ec99bb" />
   <br>
-  ![img_52.png](img_52.png)
+  <img width="336" height="224" alt="image" src="https://github.com/user-attachments/assets/c847fe8a-d061-4851-952f-5c6e302aa08f" />
   <br>
-  ![img_53.png](img_53.png)
+  <img width="619" height="494" alt="image" src="https://github.com/user-attachments/assets/3c27b541-9b6e-448e-b89f-e97887db34e0" />
   <br>
-  ![img_54.png](img_54.png)
+  <img width="482" height="138" alt="image" src="https://github.com/user-attachments/assets/1482033b-e23f-480f-b9b1-dee1ea317c5b" />
 </details>
 
 <details>
   <summary>sign in alex</summary>
-  ![img_51.png](img_51.png)
+  <img width="259" height="28" alt="image" src="https://github.com/user-attachments/assets/1a4cb75f-6f21-49bb-bd89-cd4e65eb4c10" />
   <br>
-  ![img_55.png](img_55.png)
+  <img width="343" height="218" alt="image" src="https://github.com/user-attachments/assets/9e38a4a8-a441-41a7-8db0-ec788ddcee8f" />
   <br>
-  ![img_56.png](img_56.png)
+  <img width="1891" height="561" alt="image" src="https://github.com/user-attachments/assets/3051b2b4-bc84-42fe-a816-4b3649ec32d0" />
   <br>
-  ![img_57.png](img_57.png)
+  <img width="469" height="135" alt="image" src="https://github.com/user-attachments/assets/563d2982-0579-47f3-b8ea-912752f9edab" />
 </details>
