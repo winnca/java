@@ -463,7 +463,9 @@
   <br>
   <img width="343" height="282" alt="image" src="https://github.com/user-attachments/assets/095fe82b-a767-4279-b72b-0a2ba3616314" />
   <br>
-  Исправим на: UserDetails user = User.builder().username("user").password(encoder.encode("user")).build();
+  
+    Исправим на: UserDetails user = User.builder().username("user").password(encoder.encode("user")).build();
+
   <br>
   <img width="337" height="283" alt="image" src="https://github.com/user-attachments/assets/c2dfc84a-bb51-4d71-aa04-f975ebef97bd" />
   <br>
