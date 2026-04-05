@@ -137,11 +137,6 @@
 
 * добавляем зависимости `Spring Web`, `Spring Security`, `Lombok`.
 
-<details>
-    <summary>data</summary>
-    <br>
-</details>
-
 2. Создадим модель. В нём будут лежать некие приложения со следующими полями: `id`, `name`, `author`, `version`. Добавим аннотации `@Data`, `@Builder`.
 
 <details>
