@@ -270,7 +270,7 @@
 <details>
     <summary>terminal</summary>
     <br>
-    ![img.png](img.png)
+    [![img.png](img.png)](https://github.com/winnca/java/blob/spring_security/README/img.png)
     <br>
     ![img_1.png](img_1.png)
 </details>
