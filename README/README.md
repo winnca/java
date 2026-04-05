@@ -622,7 +622,7 @@ d. Все желающие могут авторизироваться: `.formLo
 15. Добавим на контрольные точки проверки прав доступа:
 
 <details>
-  <summary></summary>
+  <summary>controllers.AppController</summary>
     
     package ru.winnca.spring_security.controllers;
     
