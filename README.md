@@ -1383,7 +1383,7 @@
 
 <br>
 
-30. В `SecurityConfig` создаём ещё один метод: `authenticationProvider()`:
+30. В `SecurityConfig` создаём ещё один метод:
 
 <details>
     <summary>authenticationProvider()</summary>
